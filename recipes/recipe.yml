@@ -13,6 +13,16 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
 
+  # install Inkscape with Ink/Stitch
+  - type: default-flatpaks
+    notify: true
+    system:
+      install:
+        - org.inkscape.Inkscape
+  - type: script
+    scripts:
+      - inkstitch.sh
+
   # install LightBurn
   - type: script
     scripts:
