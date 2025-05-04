@@ -28,6 +28,7 @@ modules:
     notify: true
     system:
       install:
+        - net.ankiweb.Anki
         - org.inkscape.Inkscape
         - com.prusa3d.PrusaSlicer
 
