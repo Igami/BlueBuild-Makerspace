@@ -68,5 +68,6 @@ modules:
         - com.vscodium.codium
         - org.videolan.VLC
         - com.github.xournalpp.xournalpp
+        - org.zotero.Zotero
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
