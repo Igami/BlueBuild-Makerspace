@@ -39,6 +39,7 @@ modules:
         - com.ultimaker.cura
         - com.github.qarmin.czkawka
         - org.darktable.Darktable
+        - org.mozilla.firefox
         - org.inkscape.Inkscape
         - com.prusa3d.PrusaSlicer
 
