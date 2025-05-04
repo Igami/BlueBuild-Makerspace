@@ -45,6 +45,7 @@ modules:
         - org.gimp.GIMP
         - org.inkscape.Inkscape
         - org.keepassxc.KeePassXC
+        - org.kicad.KiCad
         - com.prusa3d.PrusaSlicer
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
