@@ -29,6 +29,7 @@ modules:
     system:
       install:
         - net.ankiweb.Anki
+        - cc.arduino.IDE2
         - org.inkscape.Inkscape
         - com.prusa3d.PrusaSlicer
 
