@@ -40,6 +40,7 @@ modules:
         - com.github.qarmin.czkawka
         - org.darktable.Darktable
         - org.mozilla.firefox
+        - org.flameshot.Flameshot
         - org.inkscape.Inkscape
         - com.prusa3d.PrusaSlicer
 
