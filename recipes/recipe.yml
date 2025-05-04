@@ -35,6 +35,7 @@ modules:
         - org.blender.Blender
         - com.bitwarden.desktop
         - com.google.Chrome
+        - org.chromium.Chromium
         - org.inkscape.Inkscape
         - com.prusa3d.PrusaSlicer
 
