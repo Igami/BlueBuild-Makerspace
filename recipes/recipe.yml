@@ -46,6 +46,7 @@ modules:
         - org.inkscape.Inkscape
         - org.keepassxc.KeePassXC
         - org.kicad.KiCad
+        - org.leocad.LeoCAD
         - com.prusa3d.PrusaSlicer
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
