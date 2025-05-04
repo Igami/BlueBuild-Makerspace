@@ -59,5 +59,6 @@ modules:
         - com.prusa3d.PrusaSlicer
         - org.remmina.Remmina
         - org.shotcut.Shotcut
+        - org.signal.Signal
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
