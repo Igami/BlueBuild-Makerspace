@@ -34,6 +34,7 @@ modules:
         - org.audacityteam.Audacity
         - org.blender.Blender
         - com.bitwarden.desktop
+        - com.google.Chrome
         - org.inkscape.Inkscape
         - com.prusa3d.PrusaSlicer
 
