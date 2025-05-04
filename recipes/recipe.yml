@@ -37,6 +37,7 @@ modules:
         - com.google.Chrome
         - org.chromium.Chromium
         - com.ultimaker.cura
+        - com.github.qarmin.czkawka
         - org.inkscape.Inkscape
         - com.prusa3d.PrusaSlicer
 
