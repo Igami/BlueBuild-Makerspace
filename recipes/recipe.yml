@@ -58,5 +58,6 @@ modules:
         - org.openshot.OpenShot
         - com.prusa3d.PrusaSlicer
         - org.remmina.Remmina
+        - org.shotcut.Shotcut
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
