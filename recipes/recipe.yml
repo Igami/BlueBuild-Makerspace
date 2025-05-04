@@ -52,6 +52,7 @@ modules:
         - com.logseq.Logseq
         - net.meshlab.MeshLab
         - com.nextcloud.desktopclient.nextcloud
+        - org.octave.Octave
         - com.prusa3d.PrusaSlicer
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
