@@ -36,6 +36,7 @@ modules:
         - com.bitwarden.desktop
         - com.google.Chrome
         - org.chromium.Chromium
+        - com.ultimaker.cura
         - org.inkscape.Inkscape
         - com.prusa3d.PrusaSlicer
 
