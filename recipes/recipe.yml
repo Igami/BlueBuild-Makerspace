@@ -41,6 +41,7 @@ modules:
         - org.darktable.Darktable
         - org.mozilla.firefox
         - org.flameshot.Flameshot
+        - org.freecad.FreeCAD
         - org.inkscape.Inkscape
         - com.prusa3d.PrusaSlicer
 
