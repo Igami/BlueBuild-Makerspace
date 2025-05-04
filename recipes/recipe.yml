@@ -31,6 +31,7 @@ modules:
         - net.ankiweb.Anki
         - cc.arduino.IDE2
         - org.ardour.Ardour
+        - org.audacityteam.Audacity
         - org.inkscape.Inkscape
         - com.prusa3d.PrusaSlicer
 
