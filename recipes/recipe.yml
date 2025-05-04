@@ -66,5 +66,6 @@ modules:
         - com.transmissionbt.Transmission
         - com.visualstudio.code
         - com.vscodium.codium
+        - org.videolan.VLC
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
