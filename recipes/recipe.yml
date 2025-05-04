@@ -63,5 +63,6 @@ modules:
         - com.solvespace.SolveSpace
         - com.sweethome3d.Sweethome3d
         - org.mozilla.Thunderbird
+        - com.transmissionbt.Transmission
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
