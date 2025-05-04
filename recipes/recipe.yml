@@ -60,5 +60,6 @@ modules:
         - org.remmina.Remmina
         - org.shotcut.Shotcut
         - org.signal.Signal
+        - com.solvespace.SolveSpace
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
