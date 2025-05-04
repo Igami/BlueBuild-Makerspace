@@ -32,6 +32,7 @@ modules:
         - cc.arduino.IDE2
         - org.ardour.Ardour
         - org.audacityteam.Audacity
+        - org.blender.Blender
         - org.inkscape.Inkscape
         - com.prusa3d.PrusaSlicer
 
