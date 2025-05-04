@@ -49,6 +49,7 @@ modules:
         - org.leocad.LeoCAD
         - org.librecad.librecad
         - org.libreoffice.LibreOffice
+        - com.logseq.Logseq
         - com.prusa3d.PrusaSlicer
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
