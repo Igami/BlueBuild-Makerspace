@@ -25,9 +25,10 @@ modules:
 
   # install several default-flatpacks at boot
   - type: default-flatpaks
-    notify: true
-    system:
-      install:
+    configurations:
+      - scope: system
+        notify: true
+        install:
         - net.ankiweb.Anki
         - cc.arduino.IDE2
         - org.ardour.Ardour
