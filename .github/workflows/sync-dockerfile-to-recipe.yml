@@ -61,4 +61,4 @@ jobs:
           🤖 Generated with [Claude Code](https://claude.ai/code)
           
           Co-Authored-By: Claude <noreply@anthropic.com>"
-          git push
+          git push origin ${{ github.head_ref }}
