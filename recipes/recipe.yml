@@ -7,7 +7,7 @@ description: This is the OS image for my local makerspace.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bluefin-dx-hwe-nvidia
-image-version: latest-20250907
+image-version: latest-20250905
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
