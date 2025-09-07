@@ -1,0 +1,63 @@
+name: Sync Dockerfile to Recipe
+
+on:
+  pull_request:
+    paths:
+      - 'Dockerfile'
+    types: [opened, synchronize]
+
+jobs:
+  sync-image-version:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Extract image tag from Dockerfile
+        id: extract-tag
+        run: |
+          # Extract the tag from the FROM line in Dockerfile
+          TAG=$(grep "^FROM ghcr.io/ublue-os/bluefin-dx-hwe-nvidia:" Dockerfile | sed 's/.*://')
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "Extracted tag: $TAG"
+      
+      - name: Update recipe.yml
+        run: |
+          # Update the image-version in recipe.yml
+          sed -i "s/^image-version:.*/image-version: ${{ steps.extract-tag.outputs.tag }}/" recipes/recipe.yml
+          
+          # Show the change
+          echo "Updated recipe.yml:"
+          grep "image-version:" recipes/recipe.yml
+      
+      - name: Check if changes were made
+        id: check-changes
+        run: |
+          if git diff --quiet recipes/recipe.yml; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No changes needed in recipe.yml"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Changes made to recipe.yml"
+          fi
+      
+      - name: Commit changes
+        if: steps.check-changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add recipes/recipe.yml
+          git commit -m "sync recipe.yml with Dockerfile base image update
+          
+          🤖 Generated with [Claude Code](https://claude.ai/code)
+          
+          Co-Authored-By: Claude <noreply@anthropic.com>"
+          git push
